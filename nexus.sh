@@ -32,3 +32,14 @@ EOL
 sudo chkconfig nexus on
 sudo systemctl start nexus
 sudo systemctl status nexus
+
+
+
+
+
+
+
+docker run -d \
+-p 8081:8081 \
+--name nexus \
+sonatype/nexus3
